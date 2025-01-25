@@ -1,0 +1,119 @@
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative; 
+}
+
+.rss-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  margin-top: 50px; 
+}
+
+.section-container {
+  background-color: #ddf9fd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative; 
+
+}
+
+.section-container {
+  background-color: #ddf9fd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative; 
+  transition: all 0.3s ease; 
+}
+
+.section-container:hover {
+  background-color: #14d4c4; 
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5); 
+  transform: scale(1.05); 
+}
+
+
+
+.article {
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+select {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #5833fd;
+  box-shadow: 0 0 5px rgba(88, 51, 253, 0.5);
+}
+
+.logout-button {
+  position: fixed; /* Ensure the button is fixed to the top-right corner */
+  top: 10px;
+  right: 20px;
+  width: 100px;
+  background-color: #5833fd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+.logout-button:hover {
+  background-color: #55535c;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.articles-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.articles-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.articles-list::-webkit-scrollbar-thumb {
+  background-color: #645e7c;
+  border-radius: 4px;
+}
+
+.articles-list::-webkit-scrollbar-thumb:hover {
+  background-color: #1e1e22;
+}
